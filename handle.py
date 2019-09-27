@@ -11,7 +11,7 @@ import requests
 def get_access_token():
 
     url = 'https://api.weixin.qq.com/cgi-bin/token'
-    params = {'grant_type': 'client_credential', 'appid': 'wx17fdb6fbf2166ff5', 'secret': '87bb3b2b1ba667148b98bed8b786a796'}
+    params = {'grant_type': 'client_credential', 'appid': 'xxxxxxxxxxxxx', 'secret': 'xxxxxxxxxxxxxxxxxxxxxxxxx'}
 
     print(111111111)
     r = requests.get(url, params=params)
@@ -118,7 +118,7 @@ class Handle(object):
             timestamp = data.timestamp
             nonce = data.nonce
             echostr = data.echostr
-            token = "LJZNBD" #请按照公众平台官网\基本配置中信息填写
+            token = "xxxxx" #请按照公众平台官网\基本配置中信息填写
 
             list = [token, timestamp, nonce]
             list.sort()
